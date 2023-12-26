@@ -23,12 +23,12 @@
     ansible_python_interpreter: /usr/bin/python3.10
     keypair: Mumbai
     instance_type: t2.micro
-    image_id: ami-0f5ee92e2d63afc18
+    image_id: 0a0f1259dd1c90938
     wait: yes
     group: webserver
     count: 1
-    region: ap-south-1
-    security_group: ec2-security-group
+    region: ap-south-1a
+    security_group: ansible
     tag_name:
       Name: demo-ec2   
 
@@ -80,5 +80,5 @@
           sudo apt install docker.io -y
           sudo systemctl start docker
           sudo systemctl enable docker
-          sudo docker run -d --name 2048 -p 3000:3000 sushantkapare1717/2048:latest
+          sudo docker run -d --name 2048 -p 3000:3000 jamunachampalal/2048:latest
       register: ec2
