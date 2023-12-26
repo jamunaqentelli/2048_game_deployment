@@ -27,7 +27,7 @@
     wait: yes
     group: webserver
     count: 1
-    region: ap-south-1a
+    region: ap-south-1
     security_group: ansible
     tag_name:
       Name: demo-ec2   
